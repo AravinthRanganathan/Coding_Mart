@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#block").animate({width:"500px"},"slow");
+			});
+			$("#btn2").click(function(){
+				$("#block").animate({height:"390px"},"slow");
+			});
+			$("#btn3").click(function(){
+				$("#block").animate({right:"500px"},"slow");
+			});
+			$("#btn4").click(function(){
+				$("#block").animate({left:"390px"},"slow");
+			});
+			$("#btn5").click(function(){
+				$("#block").animate({width:"500px"},"slow");
+				$("#block").animate({height:"390px"},"slow");
+				$("#block").animate({right:"500px"},"slow");
+				$("#block").animate({left:"390px"},"slow");
+			});
+		    $("#btn6").on({
+		    		mouseenter:function(){
+		    			$("#block").css("background-color","blue");
+		    		},
+		    		// mouseleave:function(){
+		    		// 	$("#block").css("background-color","red");
+		    		// },
+		    		click:function(){
+		    			$("#block").css("background-color","yellow");
+		    		},
+		    		dblclick:function(){
+		    			$("#block").css("background-color","gray");
+		    		}
+		    });  
+			$("#btn6").click(function(){
+				
+			});
+			$("#btn6").dblclick(function(){
+				
+			});
+			$("#btn6").mouseover(function(){
+				
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn1">Expand Left</button>
+	<button id="btn2">Expand down</button>
+	<button id="btn3">Move Left</button>
+	<button id="btn4">Move right</button>
+	<button id="btn5">All in order</button>
+	<button id="btn6">Change Color</button>
+	<br>
+	<br>
+	<div style=" width :100px;height: 100px;background-color: red ;position:absolute;" id="block"><div>
+</body>
+</html>

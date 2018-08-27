@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Page</title>
+</head>
+<body>
+	<h1>Mahendra Singh Dhoni</h1>
+	<p style="text-align:left; width: 50%;margin-left: 10%;margin-top: 3%" id="para">
+		Mahendra Singh Dhoni commonly known as MS Dhoni born 7 July 1981 and he is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014 An attacking right-handed middle-order batsman and wicket-keeper he is widely regarded as one of the greatest finishers in limited-overs cricket He is also regarded as one of the best wicket-keepers in world cricket and is known to have very fast hands He made his One Day International (ODI) debut in December 2004 against Bangladesh and played his first Test a year later against Sri Lanka
+	</p>
+	<script type="text/javascript">
+
+	var str=document.getElementById('para').innerHTML;
+
+	document.write(str);
+
+	var arr=str.split(" ");
+
+	var pre=["with","at",	"from",	"into",	"during",	"including",	"until",	"against",	"among",	"throughout",	"despite",	"onwards",	"upon",	"concerning",	"to",	"in",	"for",	"on",	"by",	"about",	"like",	"through",	"over",	"before",	"between",	"after","since",	"without",	"under",	"within","along","following",	"across",	"behind",	"beyond",	"plus",	"except",	"but","up",	"out",	"around",	"down",	"off",	"above","near","a","is","was","to","the","as","an","to","have","has","who","and","An","am","are","of","his","later"];
+
+	var count=true;
+	for(i=0;i<arr.length;i++){
+		count=true;
+		for(j=0;j<pre.length;j++){
+			if(arr[i]==pre[j]){
+				count=false;
+			}
+		}
+		if(count){
+			document.write("<br>");
+			document.write(arr[i]+" ");
+		}
+	}
+  </script>
+</body>
+</html>

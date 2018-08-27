@@ -1,0 +1,14 @@
+---jQuery----
+
+$-retrival
+	contains selector and action
+
+function inside function -callback funtion
+
+call back is simply an after the execution
+of the event what to be happen 
+
+it does not contians name
+
+it may contains many call back funtion inside
+them

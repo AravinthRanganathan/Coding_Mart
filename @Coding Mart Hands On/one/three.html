@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Third</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var first=prompt("Enter the First value");
+		var second=prompt("Enter the Second value");
+		var third=prompt("Enter the Third value");
+
+		$(document).ready(function(){
+			$("#block1").animate({height:first});
+			$("#block2").animate({height:second});
+			$("#block3").animate({height:third});
+			$("#btn1").click(function(){
+				$("#block1").animate({width:first});
+			});
+			$("#btn1").dblclick(function(){
+				$("#block1").animate({right:"100px"},"slow");
+			});
+			$("#btn2").click(function(){
+				$("#block2").animate({width:second});
+			});
+			$("#btn2").dblclick(function(){
+				$("#block2").animate({right:"150px"},"slow");
+			});
+			$("#btn3").click(function(){
+				$("#block3").animate({width:third});
+			});
+			$("#btn3").dblclick(function(){
+				$("#block3").animate({right:"200px"},"slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="block1" style="width: 200px;height: 100px; background: red"></div>
+	<br>
+	<div id="block2" style="width: 200px;height: 100px; background: green"></div>
+	<br>
+	<div id="block3" style="width: 200px;height: 100px; background: gray"></div>	
+
+	<br>
+	<button id="btn1">Block 1</button>
+	<button id="btn2">Block 2</button>
+	<button id="btn3">Block 3</button>
+</body>
+</html>

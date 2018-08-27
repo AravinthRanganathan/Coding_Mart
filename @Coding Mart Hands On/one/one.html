@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+		$(document).ready(function(){
+		    $("#btn1").on({
+		    		mouseenter:function(){
+		    			$("#btn2").fadeOut();
+		        		$("#btn4").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn2").fadeIn();
+		        		$("#btn4").fadeIn();
+		    		}
+		    });  
+		     $("#btn2").on({
+		    		mouseenter:function(){
+		    			$("#btn1").fadeOut();
+		        		$("#btn3").fadeOut();
+		        		$("#btn5").fadeOut();
+
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn1").fadeIn();
+		        		$("#btn3").fadeIn();
+		        		$("#btn5").fadeIn();
+		    		}
+		    });
+		     $("#btn3").on({
+		    		mouseenter:function(){
+		    			$("#btn2").fadeOut();
+		        		$("#btn6").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn2").fadeIn();
+		        		$("#btn6").fadeIn();
+		    		}
+		    });	
+		      $("#btn4").on({
+		    		mouseenter:function(){
+		    			$("#btn1").fadeOut();
+		        		$("#btn5").fadeOut();
+		        		$("#btn7").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn1").fadeIn();
+		        		$("#btn5").fadeIn();
+		        		$("#btn7").fadeIn();
+		    		}
+		    });  
+		     $("#btn5").on({
+		    		mouseenter:function(){
+		    			$("#btn2").fadeOut();
+		        		$("#btn4").fadeOut();
+		    			$("#btn6").fadeOut();
+		        		$("#btn8").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn2").fadeIn();
+		    			$("#btn4").fadeIn();
+		        		$("#btn6").fadeIn();
+		    			$("#btn8").fadeIn();
+		    		}
+		    });
+		     $("#btn6").on({
+		    		mouseenter:function(){
+		    			$("#btn3").fadeOut();
+		        		$("#btn5").fadeOut();
+		        		$("#btn9").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn3").fadeIn();
+		        		$("#btn5").fadeIn();
+		        		$("#btn9").fadeIn();
+		    		}
+		    });	
+		      $("#btn7").on({
+		    		mouseenter:function(){
+		    			$("#btn4").fadeOut();
+		        		$("#btn8").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn4").fadeIn();
+		        		$("#btn8").fadeIn();
+		    		}
+		    });  
+		     $("#btn8").on({
+		    		mouseenter:function(){
+		    			$("#btn5").fadeOut();
+		    			$("#btn7").fadeOut();
+		        		$("#btn9").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn5").fadeIn();
+		    			$("#btn7").fadeIn();
+		        		$("#btn9").fadeIn();
+		    		}
+		    });
+		     $("#btn9").on({
+		    		mouseenter:function(){
+		    			$("#btn6").fadeOut();
+		        		$("#btn8").fadeOut();
+		    		},
+		    		mouseleave:function(){
+		    			$("#btn6").fadeIn();
+		        		$("#btn8").fadeIn();
+		    		}
+		    });	
+		});
+		   
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<br>
+<br>
+
+
+<table>
+	<tr>
+		<td id="tr1" ><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn1" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr2" ><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn2" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr3" ><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn3" style="display:block; width: 400px;height: 200px;"></td>
+	</tr>
+	<tr>
+		<td id="tr4"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn4" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr5"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn5" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr6"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn6" style="display:block; width: 400px;height: 200px;"></td>
+	</tr>
+	<tr>
+		<td id="tr7"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn7" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr8"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn8" style="display:block; width: 400px;height: 200px;"></td>
+		<td id="tr9"><img src="F:\HTML Sources\Jquery\1.one\img\mountains-mist-river-6201.jpg" id="btn9" style="display:block; width: 400px;height: 200px;"></td>
+	</tr>
+</table>
+
+
+
+</body>
+</html>
